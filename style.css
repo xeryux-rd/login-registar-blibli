@@ -1,0 +1,60 @@
+body {
+    height: 100vh !important;
+}
+
+.shadow {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5) !important;
+}
+
+input{
+    background: #f1f2f2 !important;
+}
+
+input:hover{
+    background: #e1e3e4 !important;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2 solid #0f6de4 !important;
+}
+
+label::after {
+    background: none !important;
+    color: #0f6de4 !important;
+}
+
+.form-control:focus ~ label {
+    color: #0f6de4 !important;
+}
+
+.smail{
+    font-size: 0.9rem !important;
+}
+
+i {
+    content: url("images/eye.svg");
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 1;
+}
+.eye-flash {
+    content: url("images/eye-flash.svg");
+}
+
+.tombol:disabled {
+    background-color: rgb(163, 163, 163) !important;
+    color: rgb(84, 84, 84) !important;
+    border: 0 !important;
+}
+
+@media screen and (max-width: 760px) {
+    .login-img{
+    content: url("images/login-blibli.png");
+}
+}
